@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
+import Hero from './components/Hero';
+import MarqueeSection from './components/MarqueeSection';
+import TshirtShowcase from './components/TshirtShowcase';
+import styled from 'styled-components';
+import Lenis from '@studio-freight/lenis';
+import MarqueeSection2 from './components/MarqueeSection2';
+
+const MainContainer = styled.div`
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+`
+
+const PageWrapper = styled.div`
+  width: 100%;
+  position: relative;
+`
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainContainer>
+      <PageWrapper>
+        <Hero />
+        <MarqueeSection />
+        <TshirtShowcase />
+        <MarqueeSection2 />
+      </PageWrapper>
+    </MainContainer>
   );
 }
 
