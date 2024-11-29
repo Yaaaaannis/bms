@@ -8,6 +8,8 @@ import Lenis from '@studio-freight/lenis';
 import MarqueeSection2 from './components/MarqueeSection2';
 import Roster from './components/Roster';
 import DripDefinition from './components/DripDefinition';
+import ThreeDCategory from './components/ThreeDCategory';
+
 const MainContainer = styled.div`
   width: 100%;
   position: relative;
@@ -29,6 +31,7 @@ function App() {
         <MarqueeSection />
         <TshirtShowcase />
         <MarqueeSection2 />
+        <ThreeDCategory />
         <DripDefinition />
         <Roster />
       </PageWrapper>
