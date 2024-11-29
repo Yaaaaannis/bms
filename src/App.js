@@ -6,6 +6,7 @@ import TshirtShowcase from './components/TshirtShowcase';
 import styled from 'styled-components';
 import Lenis from '@studio-freight/lenis';
 import MarqueeSection2 from './components/MarqueeSection2';
+import Roster from './components/Roster';
 
 const MainContainer = styled.div`
   width: 100%;
@@ -28,6 +29,7 @@ function App() {
         <MarqueeSection />
         <TshirtShowcase />
         <MarqueeSection2 />
+        <Roster />
       </PageWrapper>
     </MainContainer>
   );
