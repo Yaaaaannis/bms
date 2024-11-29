@@ -11,7 +11,7 @@ const ModalOverlay = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,17 +21,19 @@ const ModalOverlay = styled.div`
 const ModalContent = styled.div`
   width: 80vw;
   height: 80vh;
-  background: white;
+  background: black;
   border-radius: 8px;
   position: relative;
+  border: 1px solid #333;
 `
 
 const CloseButton = styled.button`
   position: absolute;
   top: 10px;
   right: 10px;
-  background: white;
-  border: none;
+  background: black;
+  border: 1px solid #333;
+  color: white;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -40,7 +42,7 @@ const CloseButton = styled.button`
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   
   &:hover {
-    background: #f0f0f0;
+    background: #333;
   }
 `
 
@@ -56,6 +58,7 @@ export function TshirtModal({ isOpen, onClose, tshirt }) {
             camera={{ position: [0, 0, 4], fov: 50 }}
             style={{ width: '100%', height: '100%' }}
             gl={{ preserveDrawingBuffer: true }}
+
           >
             <Float>
               <Stage environment="city" intensity={0.6}>
