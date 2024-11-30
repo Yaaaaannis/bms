@@ -196,6 +196,9 @@ const Button = styled.button`
   width: 90%;
   text-align: center;
   pointer-events: auto;
+  position: relative;
+  z-index: 10;
+  isolation: isolate;
   
   &:hover {
     background: white;
@@ -280,7 +283,7 @@ export default function Hero() {
           <div className="line">COLLECTION</div>
         </Title>
         <Subtitle ref={subtitleRef}>
-         blablablablablablablabla blablablabla blabla blablablablablabla blablablabla
+          La plus Drip des structures E-sports
         </Subtitle>
         <Button ref={buttonRef}>
           Découvrir
